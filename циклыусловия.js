@@ -60,5 +60,23 @@ for (let i = str.length - 1; i >= 0; i--) {
 
 console.log(reversed); 
 //9
+let num = 4
+for (let i = 1; i < 11; i++) {
+    console.log(num*i);
+}
+//10
+let s = ''
+for (let i = 1; i < 5; i++) {
+    console.log(s+='*');
+}
+//11
+acc = 0
+for (i = 1; i < 30; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+        acc += i;
+    }
+}
+console.log(acc);
+//12
 
 

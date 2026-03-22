@@ -57,9 +57,10 @@ const matrix = [  [1, 2, 3],
 ];
 matrixx = matrix.flat();
 let m = matrixx.filter(x => x % 2 !== 0);
-doubled = m.map(x => x * 2);
-sorted = doubled.sort((a, b) => b - a);
-console.log(sorted);
+let doubled = m.map(x => x * 2);
+doubled.sort((a, b) => b - a);
+console.log(doubled);
+console.log('111111111');
 //13
 const products = [  {id: 1, name: "Ноутбук", price: 25000},
   {id: 2, name: "Мышь", price: 800},
@@ -82,7 +83,7 @@ const cartItems = [  {id: 1, name: "Футболка", price: 500, quantity: 2},
   {id: 2, name: "Джинсы", price: 2000, quantity: 1},
   {id: 3, name: "Кроссовки", price: 3000, quantity: 1}
 ];
-let fullprice = cartItems.reduce((acc, x) => acc + x.price, 0);
+let fullprice = cartItems.reduce((acc, x) => acc + x.price * x.quantity, 0);
 console.log(fullprice);
 //16
 const use = [  {id: 1, name: "Иван", age: 25},
